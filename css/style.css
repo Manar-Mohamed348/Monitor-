@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    height: 200vh;
+        max-height: 1024px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 1024px;
+    margin: 0 auto;
+    background-image: url("../images/Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(169, 97%, 23%, 0.741);
+    z-index: 1;
+}
+
+.signUp {
+    width: 747px;
+    height: 958px;
+    top: 31px;
+    bottom: 55px;
+    position: relative;
+    z-index: 2;
+    padding: 50px;
+    background-color: #d9d9d9;
+    margin: 0 auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.signUp .Group1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.signUp .Group1 img {
+    height: 277px;
+    width: 264px;
+    position: relative;
+  margin-top: -25px;
+}
+
+.signUp .Group1 p {
+    font-family: "Alexandria", sans-serif;
+    font-style: normal;
+    font-size: 27px;
+    padding-top: 16px;
+    padding-bottom: 35px;
+      margin-top: -30px;
+}
+
+.signUp .Group2 .phoneNum {
+    text-align: center;
+}
+
+.signUp .Group2 .phoneNum label[for="phoneNumber"] {
+    font-family: "Alexandria", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 6px;
+    text-align: right;
+    width: 491px;
+}
+
+.signUp .Group2 .phoneNum input[type="text"] {
+    width: 491px;
+    height: 53px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 3px solid hsla(169, 97%, 23%, 0.741);
+    text-align: right;
+    padding-right: 26px;
+    margin-bottom: 20px;
+}
+
+.signUp .Group2 .pass {
+    text-align: center;
+}
+
+.signUp .Group2 .password label[for="password"] {
+    font-family: "Alexandria", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 6px;
+    text-align: right;
+    width: 491px;
+}
+
+.signUp .Group2 .password input[type="password"] {
+    width: 491px;
+    height: 53px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 3px solid hsla(169, 97%, 23%, 0.741);
+    text-align: right;
+    padding-right: 26px;
+    position: relative;
+}
+
+.signUp .Group2 .pass a {
+    position: relative;
+    right: 155px;
+    top: 8px;
+    font-family: "Alexandria", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #4d4d4d;
+}
+
+.signUp .Group3 {
+    margin-top: 35px;
+    text-align: center;
+
+}
+
+.signUp .Group3 Button {
+    display: block;
+    margin: 0 auto;
+    width: 491px;
+    height: 60px;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: hsla(169, 97%, 23%, 0.741);
+    color: white;
+    font-family: "Alexandria", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+.signUp .Group3 Button:hover {
+    cursor: pointer;
+    background-color: hsla(169, 97%, 23%, 0.9);
+}
+.signUp .Group3 span{
+    margin-top: 20px;
+    font-family: "Alexandria", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.signUp .Group3 a{
+
+    color: hsla(169, 97%, 23%, 0.741);
+    font-family: "Alexandria", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
