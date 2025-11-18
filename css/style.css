@@ -208,6 +208,35 @@ body {
     right: 0;
 }
 
+.signUp .Group2 .password {
+  position: relative;
+  width: 100%;
+  max-width: 491px;
+}
+
+.signUp .Group2 .password input {
+    width: 491px;
+    height: 53px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 3px solid hsla(169, 97%, 23%, 0.741);
+    text-align: right;
+    padding-right: 26px;
+    margin-left: 3px;
+}
+
+.signUp .Group2 .password .togglePass {
+  position: absolute;
+  top: 50%;
+  left: 12px;           
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .signUp {
@@ -217,6 +246,14 @@ body {
     
     .phoneNum input, .password input, .Group3 button {
         width: 100%;
+    }
+    .signUp .Group2 .password input {
+        margin-left: 3px;
+    }
+}
+@media (max-width: 615px) {
+    .signUp .Group2 .password input {
+        margin-left: 0;
     }
 }
 
