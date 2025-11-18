@@ -12,8 +12,8 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1440px;
-    min-height: 1024px;
+    max-width: 1920px;
+    min-height: 1080px;
     margin: 0 auto;
     background-image: url("../images/Background.jpg");
     background-size: cover;
@@ -98,6 +98,7 @@ body {
     text-align: right;
     padding-right: 26px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .signUp .Group2 .pass {
@@ -130,9 +131,11 @@ body {
 }
 
 .signUp .Group2 .pass a {
-    position: relative;
-    right: 155px;
-    top: 8px;
+    display: block;
+    text-align: left;
+    width: 100%;
+    max-width: 491px;
+    margin: 8px auto 0;
     font-family: "Alexandria", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -165,6 +168,7 @@ body {
     font-weight: 400;
     font-size: 17px;
     margin-bottom: 32px;
+    position: relative;
 }
 .signUp .Group3 Button:hover {
     cursor: pointer;
@@ -178,10 +182,63 @@ body {
     font-size: 20px;
 }
 .signUp .Group3 a{
-
     color: hsla(169, 97%, 23%, 0.741);
     font-family: "Alexandria", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
+}
+
+.signUp .Group2 ,.signUp .Group3{
+    min-width: 200px;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+}
+
+.signUp .Group2 .phoneNum label[for="phoneNumber"],
+.signUp .Group2 .password label[for="password"],
+.signUp .Group2 .phoneNum input[type="text"],
+.signUp .Group2 .password input[type="password"],
+.signUp .Group3 Button {
+    width: 100%;
+    max-width: 491px;
+}
+
+.signUp .Group2 .pass a {
+    right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .signUp {
+        width: 90%;
+        padding: 30px;
+    }
+    
+    .phoneNum input, .password input, .Group3 button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .signUp {
+        padding: 20px;
+    }
+    
+    .Group1 img {
+        width: 200px;
+        height: auto;
+    }
+    
+    .Group1 p {
+        font-size: 22px;
+    }
+    
+    .phoneNum label, .password label {
+        font-size: 18px;
+    }
+    
+    .Group3 button {
+        height: 50px;
+    }
 }
