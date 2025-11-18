@@ -215,7 +215,7 @@ body {
 }
 
 .signUp .Group2 .password input {
-    width: 491px;
+    width: 100%;
     height: 53px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
